@@ -1,0 +1,1 @@
+Экспорт состояния симуляции в render-friendly snapshot для presentation слоя.

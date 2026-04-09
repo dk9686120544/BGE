@@ -1,0 +1,1 @@
+Тесты движения: arrival, separation, integration, movement edge cases.

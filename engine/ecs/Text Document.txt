@@ -1,0 +1,19 @@
+Почему здесь нет лишнего
+
+Я специально не добавлял сейчас:
+
+итераторы
+callbacks
+archetypes
+sparse set
+component APIs
+template-heavy менеджмент
+fancy allocators
+
+Потому что сейчас нам нужен:
+
+правильный lifecycle
+правильная валидность handle
+правильная deferred deletion модель
+
+И только это.

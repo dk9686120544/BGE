@@ -1,0 +1,15 @@
+либо короткая стабилизация текущего vertical slice либо foundation для replay / либо navigation / path usage integration into group move
+либо dynamic occupancy updates and movement-world coupling
+
+
+
+Что не трогаем на этом этапе
+
+Чтобы не расползтись:
+
+не делаем файловый save/load replay
+не меняем CommandRecorder
+не меняем CommandPlayback
+не трогаем Simulation
+не открываем новый system layer
+не влезаем в serialization

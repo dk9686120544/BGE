@@ -1,0 +1,313 @@
+1. Проект Engine
+
+Тип: Static Library
+
+Configuration Type
+
+Static library (.lib)
+
+Runtime Library
+
+Для Debug:
+Multi-threaded Debug DLL (/MDd)
+
+Для Release:
+Multi-threaded DLL (/MD)
+
+Subsystem
+
+Не применяется к static library
+
+Character Set
+
+Use Unicode Character Set
+
+Warning Level
+
+Level4 (/W4)
+
+Treat Warnings As Errors
+
+Yes (/WX)
+
+Conformance mode
+
+Yes (/permissive-)
+
+C++ Language Standard
+
+ISO C++20 Standard (/std:c++20)
+
+Precompiled Headers
+
+Not Using Precompiled Headers
+
+SDL checks
+
+Yes (/sdl)
+
+Basic Runtime Checks
+
+Для Debug:
+Both (/RTC1)
+
+Для Release:
+Default
+
+Optimization
+
+Для Debug:
+Disabled (/Od)
+
+Для Release:
+Maximize Speed (/O2)
+
+Inline Function Expansion
+
+Для Debug:
+Default
+
+Для Release:
+Any Suitable (/Ob2)
+
+Intrinsic Functions
+
+Для Debug:
+No
+
+Для Release:
+Yes (/Oi)
+
+Favor Size or Speed
+
+Для Release:
+Favor fast code (/Ot)
+
+Enable Enhanced Instruction Set
+
+Пока:
+Not Set
+
+AVX2 включим позже осознанно, не сейчас.
+
+2. Проект Game
+
+Тип: Static Library
+
+Настройки почти те же, что у Engine.
+
+Configuration Type
+
+Static library (.lib)
+
+Runtime Library
+
+Debug:
+/MDd
+
+Release:
+/MD
+
+Subsystem
+
+Не применяется
+
+Character Set
+
+Use Unicode Character Set
+
+Warning Level
+
+Level4 (/W4)
+
+Treat Warnings As Errors
+
+Yes (/WX)
+
+Conformance mode
+
+Yes (/permissive-)
+
+C++ Language Standard
+
+/std:c++20
+
+Precompiled Headers
+
+Not Using Precompiled Headers
+
+SDL checks
+
+Yes (/sdl)
+
+Basic Runtime Checks
+
+Debug:
+/RTC1
+
+Release:
+Default
+
+Optimization
+
+Debug:
+/Od
+
+Release:
+/O2
+
+Intrinsic Functions
+
+Debug:
+No
+
+Release:
+Yes (/Oi)
+
+3. Проект App
+
+Тип: Executable
+
+Если у тебя обычное Win32-окно без консоли, лучше сразу делать Windows Application.
+
+Configuration Type
+
+Application (.exe)
+
+Runtime Library
+
+Debug:
+/MDd
+
+Release:
+/MD
+
+Subsystem
+
+Если без консоли:
+Windows (/SUBSYSTEM:WINDOWS)
+
+Если хочешь пока видеть stdout/printf:
+Console (/SUBSYSTEM:CONSOLE)
+
+Моя рекомендация на старт:
+
+Console
+
+Так проще для логов и отладки. Потом переключишь на Windows.
+
+Character Set
+
+Use Unicode Character Set
+
+Warning Level
+
+Level4 (/W4)
+
+Treat Warnings As Errors
+
+Yes (/WX)
+
+Conformance mode
+
+Yes (/permissive-)
+
+C++ Language Standard
+
+/std:c++20
+
+Precompiled Headers
+
+Not Using Precompiled Headers
+
+SDL checks
+
+Yes (/sdl)
+
+Basic Runtime Checks
+
+Debug:
+/RTC1
+
+Release:
+Default
+
+Optimization
+
+Debug:
+/Od
+
+Release:
+/O2
+
+Intrinsic Functions
+
+Debug:
+No
+
+Release:
+Yes (/Oi)
+
+4. Проект Tests
+
+Тип: Executable
+
+Configuration Type
+
+Application (.exe)
+
+Runtime Library
+
+Debug:
+/MDd
+
+Release:
+/MD
+
+Subsystem
+
+Console (/SUBSYSTEM:CONSOLE)
+
+Character Set
+
+Use Unicode Character Set
+
+Warning Level
+
+Level4 (/W4)
+
+Treat Warnings As Errors
+
+Yes (/WX)
+
+Conformance mode
+
+Yes (/permissive-)
+
+C++ Language Standard
+
+/std:c++20
+
+Precompiled Headers
+
+Not Using Precompiled Headers
+
+SDL checks
+
+Yes (/sdl)
+
+Basic Runtime Checks
+
+Debug:
+/RTC1
+
+Release:
+Default
+
+Optimization
+
+Debug:
+/Od
+
+Release:
+/O2

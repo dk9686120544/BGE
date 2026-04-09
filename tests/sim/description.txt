@@ -1,0 +1,1 @@
+Тесты симуляции: tick, command queue, determinism, state hash.

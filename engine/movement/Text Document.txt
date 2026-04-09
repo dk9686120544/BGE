@@ -1,0 +1,12 @@
+Я специально не добавлял сейчас:
+
+acceleration
+mass
+facing
+angular speed
+braking force
+path cursor
+formation slot
+obstacle avoidance tuning zoo
+
+Потому что на текущем этапе нам нужен v0 movement contract, не финальная AAA-энциклопедия параметров.

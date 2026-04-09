@@ -1,0 +1,1 @@
+GameSession: перевод input в commands, orchestration верхнего уровня.

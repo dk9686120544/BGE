@@ -1,0 +1,42 @@
+Что важно сейчас знать
+1. dynamic_cast
+
+Да, здесь я использую dynamic_cast<const MoveCommand*>.
+
+Это нормально на текущем этапе, потому что:
+
+у нас пока один реальный тип game-команды;
+код читаемый и честный;
+premature optimization сейчас не нужна.
+
+Если позже захочешь:
+
+command ids
+tagged command system
+variant-like dispatch
+visitor
+
+это можно сделать потом отдельным шагом.
+
+2. GameSession пока не трогает pathfinding
+
+Это осознанно.
+
+Сейчас GameSession:
+
+принимает move intent
+ставит target в MovementState
+а MovementSystem просто двигает к target
+
+То есть это первый vertical integration step, не полный RTS order pipeline.
+
+3. Simulation::Tick() и GameSession::ApplyQueuedCommands()
+
+Сейчас предполагаемый порядок использования такой:
+
+QueueMoveCommand(...)
+Simulation.Tick()
+GameSession.ApplyQueuedCommands()
+GameSession.Tick(deltaTime)
+
+Позже это можно будет оформить жёстче в одном orchestration loop, но для текущего этапа это уже рабочий контракт.

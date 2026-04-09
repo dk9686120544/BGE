@@ -1,0 +1,16 @@
+Ниже даю полный финальный:
+
+engine/nav/Pathfinder.h
+engine/nav/Pathfinder.cpp
+
+Это версия A v0*:
+
+4-направленное движение
+Manhattan heuristic
+без диагоналей
+без JPS
+без flow fields
+без “умностей”
+deterministic and readable
+
+Именно то, что нужно сейчас.

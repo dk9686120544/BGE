@@ -1,0 +1,1 @@
+Симуляция: tick loop, command queue, deterministic update order, state hash.

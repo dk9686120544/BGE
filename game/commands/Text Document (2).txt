@@ -1,0 +1,26 @@
+Что важно сейчас
+Порядок использования на текущем этапе
+
+Сейчас разумный v0 pipeline такой:
+
+GameSession.QueueMoveCommand(...)
+Simulation.Tick()
+GameSession.ApplyQueuedCommands()
+GameSession.Tick(deltaTime)
+
+Это не финальный orchestration loop всей игры, но для текущего вертикального среза — правильный и рабочий контракт.
+
+Почему здесь dynamic_cast
+
+Пока это нормально:
+
+у нас очень мало типов команд;
+код читаемый;
+не надо преждевременно строить command-dispatch framework.
+
+Потом, если понадобится, можно заменить на:
+
+command ids,
+tagged dispatch,
+visitor,
+variant-like approach.

@@ -1,0 +1,1 @@
+Win32 host: main, создание окна, message loop, bootstrap приложения.

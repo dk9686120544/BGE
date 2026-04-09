@@ -1,0 +1,1 @@
+Игровая логика RTS поверх движка: rules, commands, units, session.

@@ -1,0 +1,1 @@
+ECS-основа: Entity handle, storage, freelist, alive mask, lifecycle.

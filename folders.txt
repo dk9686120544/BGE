@@ -1,0 +1,33 @@
+BGE/
+├── build/                      - артефакты сборки (obj, exe, pdb, generated files; не хранить в git)
+├── docs/                       - документация проекта: архитектура, спецификации, roadmap
+├── external/                   - сторонние библиотеки (imgui, stb, googletest и т.д.)
+├── engine/                     - код движка
+│   ├── core/                   - базовые типы, assert, лог, hash, RNG, общие утилиты
+│   ├── math/                   - fixed-point математика, вектора, sqrt, геометрия
+│   ├── ecs/                    - Entity handle, storage, freelist, lifecycle
+│   ├── sim/                    - tick loop, command queue, deterministic update order, state hash
+│   ├── world/                  - карта, occupancy, слои, статические блокеры, pathing-данные
+│   ├── nav/                    - grid и A* path query v0
+│   ├── movement/               - desired velocity, arrival, separation, интеграция позиции
+│   ├── bridge/                 - экспорт состояния симуляции в snapshot для render/presentation
+│   ├── debug/                  - debug-структуры и визуализация состояния
+│   └── platform/               - платформенные абстракции, нужные движку
+├── game/                       - RTS-логика поверх движка
+│   ├── rules/                  - gameplay-константы и параметры
+│   ├── commands/               - Move и будущие игровые команды
+│   ├── units/                  - данные и описания юнитов
+│   └── session/                - GameSession: input -> commands, orchestration
+├── app/                        - host-приложение
+│   └── win32/                  - main, окно, message loop, bootstrap
+├── assets/                     - runtime-данные проекта
+│   ├── maps/                   - карты для тестов симуляции и навигации
+│   └── debug/                  - временные debug-данные
+├── shaders/                    - шейдеры (на старте может быть пусто)
+├── tests/                      - тесты
+│   ├── math/                   - тесты fixed-point математики и векторов
+│   ├── ecs/                    - тесты ECS и lifecycle
+│   ├── sim/                    - тесты deterministic simulation и state hash
+│   ├── nav/                    - тесты grid и pathfinding
+│   └── movement/               - тесты movement logic
+└── BGE.sln                     - solution файл Visual Studio

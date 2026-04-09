@@ -1,0 +1,1 @@
+Тесты ECS: entity lifecycle, storage, freelist, generation checks.

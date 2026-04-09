@@ -1,0 +1,93 @@
+BGE/
+├── engine/
+│   ├── core/
+│   │   ├── Assert.h
+│   │   ├── Types.h
+│   │   ├── Hash.h
+│   │   ├── Random.h
+│   │   └── Random.cpp
+│   ├── math/
+│   │   ├── Scalar.h
+│   │   ├── Scalar.cpp
+│   │   ├── Vec2.h
+│   │   ├── Vec2.cpp
+│   │   ├── Math.h
+│   │   └── Math.cpp
+│   ├── ecs/
+│   │   ├── Entity.h
+│   │   ├── EntityManager.h
+│   │   ├── EntityManager.cpp
+│   │   └── ComponentStorage.h
+│   ├── sim/
+│   │   ├── Command.h
+│   │   ├── CommandQueue.h
+│   │   ├── CommandQueue.cpp
+│   │   ├── TickClock.h
+│   │   ├── Simulation.h
+│   │   ├── Simulation.cpp
+│   │   ├── StateHash.h
+│   │   └── StateHash.cpp
+│   ├── world/
+│   │   ├── WorldTypes.h
+│   │   ├── Map.h
+│   │   ├── Map.cpp
+│   │   ├── Grid.h
+│   │   ├── Grid.cpp
+│   │   ├── Occupancy.h
+│   │   └── Occupancy.cpp
+│   ├── nav/
+│   │   ├── PathTypes.h
+│   │   ├── Pathfinder.h
+│   │   └── Pathfinder.cpp
+│   ├── movement/
+│   │   ├── MovementTypes.h
+│   │   ├── MovementSystem.h
+│   │   ├── MovementSystem.cpp
+│   │   ├── SeparationSystem.h
+│   │   ├── SeparationSystem.cpp
+│   │   ├── Arrival.h
+│   │   └── Arrival.cpp
+│   ├── bridge/
+│   │   ├── Snapshot.h
+│   │   └── Snapshot.cpp
+│   ├── debug/
+│   │   ├── DebugDraw.h
+│   │   └── DebugDraw.cpp
+│   └── platform/
+│       ├── InputState.h
+│       └── Window.h
+├── game/
+│   ├── rules/
+│   │   ├── GameRules.h
+│   │   └── UnitRules.h
+│   ├── commands/
+│   │   ├── MoveCommand.h
+│   │   └── MoveCommand.cpp
+│   ├── units/
+│   │   ├── Unit.h
+│   │   └── Unit.cpp
+│   └── session/
+│       ├── GameSession.h
+│       └── GameSession.cpp
+├── app/
+│   └── win32/
+│       ├── Main.cpp
+│       ├── Win32Window.cpp
+│       └── Win32Input.cpp
+└── tests/
+    ├── math/
+    │   ├── ScalarTests.cpp
+    │   ├── Vec2Tests.cpp
+    │   └── MathTests.cpp
+    ├── ecs/
+    │   └── EntityManagerTests.cpp
+    ├── sim/
+    │   ├── CommandQueueTests.cpp
+    │   ├── SimulationTests.cpp
+    │   └── StateHashTests.cpp
+    ├── nav/
+    │   └── PathfinderTests.cpp
+    └── movement/
+        ├── MovementTests.cpp
+        ├── SeparationTests.cpp
+        └── ArrivalTests.cpp
